@@ -25,7 +25,7 @@
 }
 /* Small Cards Customizing */
 #tarjetas-informativas .container .row{
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
     flex-wrap: wrap;
     margin-top: 0;
 }
@@ -35,8 +35,11 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.card .card-img{
+/* .card .card-img{
     justify-content: center;
+} */
+.sm-card-icon{
+    font-size: 50px;
 }
 /* Big Cards Customizing */
 
@@ -44,6 +47,7 @@
     display: flex;
     background-size: cover;
     border-radius: 15px;
+    justify-content: center;
 }
 .card-img-overlay{
     /* position: absolute; */
@@ -81,6 +85,10 @@
 .description .card-subtitle{
     font-size: 14px;
     max-height: 18px;
+}
+.overlay .icon{
+    max-height: 50px;
+    font-size: 45px;
 }
 #AtencionCliente .card-img-overlay .overlay .icon{
     display: flex;
