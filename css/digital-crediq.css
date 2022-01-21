@@ -126,7 +126,7 @@
 }
 
 /* MEDIA QUERIES */
-
+/* from 0 to sm breakpoint */
 #nvdd1{
     display: none;
 }
@@ -142,6 +142,17 @@
 #portada-inicioSesion{
     display: none;
 }
+#desc-puntos-de-pago{
+    display: none;
+}
+#dvf{
+    display: none;
+}
+#mvf{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 576px) {
     /* navbar */
     #nvdd1{
@@ -159,5 +170,13 @@
     #portada-inicioSesion{
         display: flex;
     }
-    
+    #desc-puntos-de-pago{
+        display: block;
+    }
+    #dvf{
+        display: flex;
+    }
+    #mvf{
+        display: none;
+    }
 }
