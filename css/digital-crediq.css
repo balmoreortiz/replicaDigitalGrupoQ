@@ -9,7 +9,7 @@
 /* Cover Customizing */
 #portada-inicioSesion .col-lg-4{
     margin: 0;
-    width: 400px;
+    /* width: 400px; */
 }
 #portada-inicioSesion .col-lg-8{
     background-image: url('../img/banner/banner_crediq_large.jpg');
@@ -123,4 +123,41 @@
 .division-3{
     display: flex;
     flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+
+#nvdd1{
+    display: none;
+}
+#nvdd2{
+    display: none;
+}
+#nvmd1{
+    display: block;
+}
+#nvmd2{
+    display: block;
+}
+#portada-inicioSesion{
+    display: none;
+}
+@media (min-width: 576px) {
+    /* navbar */
+    #nvdd1{
+        display: block;
+    }
+    #nvdd2{
+        display: block;
+    }
+    #nvmd1{
+        display: none;
+    }
+    #nvmd2{
+        display: none;
+    }
+    #portada-inicioSesion{
+        display: flex;
+    }
+    
 }
