@@ -120,26 +120,36 @@
 
   <main>
     <!-- selector de préstamo -->
-    <section id="selector-prestamo" style="border: 1px solid blue;">
-      <div class="container mt-4 mb-2 border">
+    <section id="selector-prestamo">
+      <div class="container mt-4 mb-2">
         <div class="row">
           <div class="col-md-12 d-flex flex-row justify-content-center">
-            <div id="prestamo-anterior" class="border"> &#60; </div>
-            <div id="datos-de-prestamo" class="border d-flex flex-row">
-              <div id="logo-brand" style="display: grid; align-self: center;"><img src="https://via.placeholder.com/50" alt="" srcset=""></div>
-              <div id="des-prestamo" class="d-flex flex-column border">
-                <div id="titulo"><h3>CX5 Prueba</h3></div>
-                <div id="specs" class="d-flex flex-row">
-                  <div>Placa: P-658014</div>
-                  <div>Modelo: CX-5</div>
+            <div id="prestamo-anterior" class="d-flex justify-content-center fw-bold btn-prestamo" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+              <span class="align-middle">&#60;</span>
+            </div>
+            <div id="datos-de-prestamo" class="d-flex flex-row">
+              <div id="logo-brand" class="d-flex justify-content-center px-3"><img src="https://via.placeholder.com/50" alt="" srcset=""></div>
+              <div class="" id="specs">
+                <div class="row px-1" id="dsc-prestamo">
+                  <div class="col-md-12">
+                    <h4>CX5 Prueba</h4>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row flex-row flex-wrap" id="specs">
+                      <div class="col-md-6 ">Placa: <span>P-658014</span></div>
+                      <div class="col-md-6 ">Modelo: <span>CX-5</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div id="num-referencia">
-                <div>Número de Referencia</div>
-                <div>01000000006328</div>
+                <h6 class="text-muted pt-1 px-3">Número de Referencia</h6>
+                <h4 class="px-3">01000000006328</h4>
               </div>
             </div>
-            <div id="prestamo-siguiente" class="border"> &#62; </div>
+            <div id="prestamo-siguiente" class="d-flex justify-content-center fw-bold btn-prestamo" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+              <span class="align-middle">&#62;</span>
+            </div>
           </div>
         </div>
       </div>
@@ -150,10 +160,10 @@
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-              <label class="btn btn-outline-primary" for="btnradio1">Consultas</label>
-              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-              <label class="btn btn-outline-primary" for="btnradio2">Servicios</label>
+              <input type="radio" class="btn-check active" name="btnradio" id="btnradio1" autocomplete="off" style="width: 100%;" checked>
+              <label class="btn bg-light fw-bold" for="btnradio1" style=" color: #006cb6;">Consultas</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" style="width: 100%;">
+              <label class="btn bg-light fw-bold" for="btnradio2" style=" color: darkslategrey;">Servicios</label>
             </div>
           </div>
         </div>
@@ -180,8 +190,9 @@
             </div>
           </div>
         </div>
+
         <!-- contenedor con borde -->
-        <div class="container mt-4" style="border: 1.5px solid grey;">
+        <div class="container mt-4" style="border: 1.5px solid lightgrey;">
           <!-- detalles del préstamo: cliente, correo. Btn Pagar Cuota -->
           <div class="row mb-4">
             <div class="col-md-12">
@@ -217,7 +228,7 @@
           <div class="row mt-2 mb-4">
             <div class="col-md-12">
               <div class="col-md-12" style="display: grid; justify-content: center;">
-                <button type="button" class="btn btn-outline-dark">Pagar cuota</button>
+                <button id="btn-pay-fee" type="button" class="btn btn-outline-light text-danger shadow fw-bold rounded">Pagar cuota ></button>
               </div>
             </div>
           </div>

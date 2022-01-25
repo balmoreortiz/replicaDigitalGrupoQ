@@ -3,6 +3,30 @@
 
 
 
+
+#datos-de-prestamo{
+    background-color: #f1f1f1;
+    /* border: 1px solid #bdbdbd; */
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+#logo-brand{
+    font-size: 36px;
+    align-items: center;
+    /* padding: 0 15px; */
+}
+
+.btn-prestamo{
+    border: 1px solid #bdbdbd;
+    background-color: #f1f1f1;
+    align-items: center;
+    padding: 0 12px;
+}
+
+#btnradio1.active{
+    background-color: #e0e0e0;
+}
+
 .c4{
     width: 100%;
     border-radius: 15px;
@@ -14,6 +38,10 @@
     border-top-right-radius: 15px;
 }
 
+#btn-pay-fee{
+    width: 18rem;
+    
+}
 
 #total-deuda{
     background-color: #f1f1f1;
