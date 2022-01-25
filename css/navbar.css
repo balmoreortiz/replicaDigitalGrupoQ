@@ -1,0 +1,39 @@
+/* by neing a shared component, it has its own css file */
+
+/* NAVBAR Customizing */
+.navbar .nav-item{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    height: 42px;
+}
+
+#nvdd1{
+    display: none;
+}
+#nvdd2{
+    display: none;
+}
+#nvmd1{
+    display: block;
+}
+#nvmd2{
+    display: block;
+}
+
+@media (min-width: 576px) {
+    /* navbar */
+    #nvdd1{
+        display: block;
+    }
+    #nvdd2{
+        display: block;
+    }
+    #nvmd1{
+        display: none;
+    }
+    #nvmd2{
+        display: none;
+    }
+}

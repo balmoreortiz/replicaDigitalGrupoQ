@@ -1,12 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/consulta-prestamo.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
-    
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/header/cq_logo_full.png" alt="" srcset="" style="height: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <!-- desktop: dropdown element -->
+          <li class="nav-item dropdown" id="nvdd1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-sm-start" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Vehiculos nuevos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Vehiculos usados</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Renting</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">CrediAuto</a></li>
+            </ul>
+          </li>
+          <!-- mobile: dropdown hidden, collapse element instead -->
+          <li class="nav-item" id="nvmd1">
+            <a class="btn" data-bs-toggle="collapse" href="#nbmc1" role="button" aria-expanded="false"
+              aria-controls="nbmc1">
+              Productos
+            </a>
+          </li>
+          <div class="collapse" id="nbmc1">
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Vehiculos Nuevos</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Vehículos Usados 2</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Renting</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">CrediAuto</a></div>
+          </div>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pre aprobación</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Puntos de pago</a>
+          </li>
+  
+          <li class="nav-item dropdown" id="nvdd2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              País
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">El Salvador</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Honduras</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Nicaragua</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Costa Rica</a></li>
+            </ul>
+          </li>
+          <!-- selector de países para versión móvil -->
+          <li class="nav-item" id="nvmd2">
+            <a class="btn" data-bs-toggle="collapse" href="#nbmc2" role="button" aria-expanded="false"
+              aria-controls="nbmc2">
+              Países
+            </a>
+          </li>
+          <div class="collapse" id="nbmc2">
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">El Salvador</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Honduras</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Nicaragua</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark"
+                style="text-decoration: none;">Costa Rica</a></div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- selector de préstamo -->
+    <section id="selector-prestamo" style="border: 1px solid blue;">
+      <div class="container mt-4 mb-2 border">
+        <div class="row">
+          <div class="col-md-12 d-flex flex-row justify-content-center">
+            <div id="prestamo-anterior" class="border"> &#60; </div>
+            <div id="datos-de-prestamo" class="border d-flex flex-row">
+              <div id="logo-brand" style="display: grid; align-self: center;"><img src="https://via.placeholder.com/50" alt="" srcset=""></div>
+              <div id="des-prestamo" class="d-flex flex-column border">
+                <div id="titulo"><h3>CX5 Prueba</h3></div>
+                <div id="specs" class="d-flex flex-row">
+                  <div>Placa: P-658014</div>
+                  <div>Modelo: CX-5</div>
+                </div>
+              </div>
+              <div id="num-referencia">
+                <div>Número de Referencia</div>
+                <div>01000000006328</div>
+              </div>
+            </div>
+            <div id="prestamo-siguiente" class="border"> &#62; </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- radio button: "consultas y servicios" -->
+    <section id="consultas-servicios">
+      <div class="container mt-2 mb-2">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btnradio1">Consultas</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2">Servicios</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contenido de las consultas -->
+    <section id="contenido-consultas">
+      <!-- radio button: consulta préstamo, estado cuenta, carné de pago, factura electrónica -->
+      <div class="container mt-2 mb-2">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1-c" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btnradio1-c">Consulta de Préstamo</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2-c" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2-c">Estado de Cuenta</label>
+            
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3-c" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio3-c">Carné de Pago</label>
+      
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4-c" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio4-c">Factura Electrónica</label>
+            </div>
+          </div>
+        </div>
+        <!-- contenedor con borde -->
+        <div class="container mt-4" style="border: 1.5px solid grey;">
+          <!-- detalles del préstamo: cliente, correo. Btn Pagar Cuota -->
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <div class="text-center">Detalle de prestamo</div>
+              <div class="d-flex flex-row">
+                <div class="col-md-6"><strong>Cliente:</strong> Alvaro Calero</div>
+                <div class="col-md-6"><strong>Correo:</strong> acaelro@crediq.com.net.net</div>
+              </div>
+            </div>
+          </div>
+          <!-- Cards x4 -->
+          <div class="row mt-2 mb-4">
+            <div class="col-md-12 mt-2 mb-2 d-flex flex-row justify-content-around">
+              <div class="card text-center c4 mx-4">
+                <div class="card-header c-h text-white"><h5>Próxima Cuota</h5></div>
+                <div class="card-body"><p>01/02/2022</p></div>
+              </div>
+              <div class="card text-center c4 mx-4">
+                <div class="card-header c-h text-white"><h5>Saldo Vencido</h5></div>
+                <div class="card-body"><p>$1,177.59</p></div>
+              </div>
+              <div class="card text-center c4 mx-4">
+                <div class="card-header c-h text-white"><h5>Cuota Mensual</h5></div>
+                <div class="card-body"><p>$273.04</p></div>
+              </div>
+              <div class="card text-center c4 mx-4">
+                <div class="card-header c-h text-white"><h5>Total a Pagar</h5></div>
+                <div class="card-body"><p>$1,450.63</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- Btn Pagar Cuota -->
+          <div class="row mt-2 mb-4">
+            <div class="col-md-12">
+              <div class="col-md-12" style="display: grid; justify-content: center;">
+                <button type="button" class="btn btn-outline-dark">Pagar cuota</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Total de la deuda -->
+          <div class="row mt-2 mb-4">
+            <div class="col-md-12 text-center">
+              <div id="total-deuda">
+                <h6 class="pt-3 pb-3"><strong>Total deuda: 110,834.03</strong></h6>
+              </div>
+            </div>
+          </div>
+          <!-- Algún texto descriptivo -->
+          <div class="row mt-2 mb-4">
+            <div class="col-md-12 text-center text">
+              <h6 class="text-muted">Estado de la cuenta refleja saldos a la fecha de su emisión. Interese se calculan a diario</h6>
+              <h6 class="text-muted">Los cargos pueden variar según la fecha del estado de la cuenta</h6>
+            </div>
+          </div>
+          <!-- Cinco contenedores con márgen -->
+          <div class="row mt-2 mb-4">
+            <div class="col-md-12">
+              <div id="cuadricula" class="d-flex flex-row text-center">
+                <div id="c-c-1" class="d-flex flex-column c-c">
+                  <div class="ccup pt-2 pb-2">Póliza No.</div>
+                  <div class="text-uppercase">1134733</div>
+                </div>
+                <div id="c-c-2" class="d-flex flex-column c-c">
+                  <div class="ccup pt-2 pb-2">Asegurador</div>
+                  <div class="text-uppercase">Aseguradora Suiza Salvadoreña</div>
+                </div>
+                <div id="c-c-3" class="d-flex flex-column c-c">
+                  <div class="ccup pt-2 pb-2">Fecha de vencimiento</div>
+                  <div class="text-uppercase">01/02/2022</div>
+                </div>
+                <div id="c-c-4" class="d-flex flex-column c-c">
+                  <div class="ccup pt-2 pb-2">Cuota Mensual de Seguro</div>
+                  <div class="text-uppercase">$40.65</div>
+                </div>
+                <div id="c-c-5" class="d-flex flex-column c-c">
+                  <div class="ccup pt-2 pb-2">Saldo por Devengar</div>
+                  <div class="text-uppercase">$146.22</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contenido de los servicios -->
+    <section class="" id="contenido-servicios"></section>
+
+    <!-- pie de página -->
+    <section class="bg-seccion footer text-white" id="pie-de-pagina">
+      <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+        <!-- Desktop Version Footer -->
+        <div class="row" id="dvf">
+          <div class="col-md-3" id="division-1">
+            <img src="img/footer/cq_logo_blanco.png" alt="" srcset=""> <br>
+            <p>CrediQ<br>Todos los derechos reservados</p>
+          </div>
+          <div class="col-md-3" id="division-2">
+            <div class="detail"><strong>Call Center:</strong> 2248-6400 opción 2</div>
+            <div class="detail"><i class="far fa-envelope"></i> crediqcall@crediq.com</div>
+            <div class="detail"><i class="fab fa-facebook-square"></i> CrediQ El Salvador</div>
+          </div>
+          <div class="col-md-3" id="division-3">
+            <div><img src="img/footer/google_play.png" alt="" srcset=""></div>
+            <div><img src="img/footer/app_store.svg" alt="" srcset=""></div>
+          </div>
+          <div class="col-md-3" id="division-4">
+            <div class="d-flex">
+              <a href="" class="btn btn-outline-light bg-dark text-white">Sucursales</a>
+              <a href="" class="btn btn-outline-light bg-dark text-white">Soporte</a>
+              <a href="" class="btn btn-outline-light bg-dark text-white">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Version Footer -->
+        <div class="row" id="mvf">
+          <div class="col" style="display: grid; justify-content: center;">
+            <img src="img/footer/cq_logo_blanco.png" alt="" srcset=""> <br>
+          </div>
+          <div class="col mt-2" style="display: grid; justify-content: center;">
+            <div>
+              <i class="far fa-envelope"></i>
+              <i class="fab fa-facebook-square"></i>
+            </div>
+          </div>
+          <div class="col mt-2" style="display: grid; justify-content: center;">
+            <div class="d-flex">
+              <a href="" class="btn btn-outline-light bg-dark text-white">Contáctanos</a>
+            </div>
+          </div>
+          <div class="col mt-2 text-center" style="display: grid; justify-content: center;">
+            <p>CrediQ<br>Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/consulta-prestamo.js"></script>
 </body>
+
 </html>

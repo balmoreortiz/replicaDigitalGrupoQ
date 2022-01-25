@@ -1,0 +1,31 @@
+/* by being a shared component, it has its own css file */
+
+/* FOOTER Customizing */
+.bg-seccion{
+    background-color: #333333;
+}
+.division-1{
+    font-size: 11px;
+    /* font-weight: lighter; */
+}
+.division-3{
+    display: flex;
+    flex-direction: column;
+}
+
+#dvf{
+    display: none;
+}
+#mvf{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:576px) {
+    #dvf{
+        display: flex;
+    }
+    #mvf{
+        display: none;
+    }
+}

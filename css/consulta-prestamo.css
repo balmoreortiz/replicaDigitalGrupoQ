@@ -1,0 +1,44 @@
+
+
+
+
+
+.c4{
+    width: 100%;
+    border-radius: 15px;
+}
+.c-h{
+    background-color: #006cb6;
+    height: fit-content;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+#total-deuda{
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+#cuadricula{
+    border: 1.5px solid black;
+    border-radius: 15px;
+}
+.c-c{
+    width: 100%;
+}
+.ccup{
+    border-bottom: 1px solid black;
+}
+#c-c-1{
+    border-right: 1px solid black;
+}
+#c-c-2{
+    border-right: 1px solid black;
+}
+#c-c-3{
+    border-right: 1px solid black;
+}
+#c-c-4{
+    border-right: 1px solid black;
+}

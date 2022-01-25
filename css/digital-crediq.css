@@ -1,11 +1,4 @@
-/* NAVBAR Customizing */
-.navbar .nav-item{
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 50px;
-    padding-left: 50px;
-    height: 42px;
-}
+
 /* Cover Customizing */
 #portada-inicioSesion .col-lg-4{
     margin: 0;
@@ -112,71 +105,25 @@
 
 
 
-/* FOOTER Customizing */
-.bg-seccion{
-    background-color: #333333;
-}
-.division-1{
-    font-size: 11px;
-    /* font-weight: lighter; */
-}
-.division-3{
-    display: flex;
-    flex-direction: column;
-}
 
 /* MEDIA QUERIES */
 /* from 0 to sm breakpoint */
-#nvdd1{
-    display: none;
-}
-#nvdd2{
-    display: none;
-}
-#nvmd1{
-    display: block;
-}
-#nvmd2{
-    display: block;
-}
+
 #portada-inicioSesion{
     display: none;
 }
 #desc-puntos-de-pago{
     display: none;
 }
-#dvf{
-    display: none;
-}
-#mvf{
-    display: flex;
-    flex-direction: column;
-}
+
 
 @media (min-width: 576px) {
-    /* navbar */
-    #nvdd1{
-        display: block;
-    }
-    #nvdd2{
-        display: block;
-    }
-    #nvmd1{
-        display: none;
-    }
-    #nvmd2{
-        display: none;
-    }
+    
     #portada-inicioSesion{
         display: flex;
     }
     #desc-puntos-de-pago{
         display: block;
     }
-    #dvf{
-        display: flex;
-    }
-    #mvf{
-        display: none;
-    }
+    
 }
