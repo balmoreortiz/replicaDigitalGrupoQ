@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <div class="container-fluid bg-light position-relative" style="z-index: 110;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/header/cq_logo_full.png" alt="" srcset=""
+            style="height: 40px;"></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="w-100"><img src="http://via.placeholder.com/1666x264" alt="" srcset=""></div>
+
+  <div class="container py-4">
+    <form action="#" class="pt-5" name="form-seguros" method="post" novalidate="novalidate">
+      <div class="row">
+        <!-- menú de elementos lateral -->
+        <div class="col-12 col-md-3 pb-5">
+          <div class="list-group " id="div_menu_site">
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">inicio</a>
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">consultas</a>
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">servicios</a>
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">reporte su pago</a>
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">mi perfil</a>
+            <a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">cerrar sesion</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <!-- elementos de form: input y select -->
+          <div class="row">
+            <!-- select de seguros -->
+            <div class="col-sm-6 pb-4">
+              <label for="select-operacion" style="color: grey;"><strong>Operación</strong></label>
+              <select name="select-operacion" id="select-operacion" class="form-control">
+                <option value="" class="" data-tipo-operacion="N">Seleccione</option>
+                <option value="0600000428318" class="" data-tipo-operacion="N">0600000428318</option>
+                <option value="0600000428834" class="" data-tipo-operacion="N">0600000428834</option>
+                <option value="0660000000053" class="" data-tipo-operacion="N">0660000000053</option>
+              </select>
+            </div>
+            <div class="col-md-4 col-sm-6 pb-4">
+              <label for="select-nuevafecha" style="color: grey;"><strong>Cambio de Fecha</strong></label>
+              <select name="select-nuevafecha" id="select-nuevafecha" class="form-control">
+                <option value="" class="" data-tipo-operacion="N">Elija una opción</option>
+                <option value="01" class="" data-tipo-operacion="N">01</option>
+                <option value="05" class="" data-tipo-operacion="N">05</option>
+                <option value="10" class="" data-tipo-operacion="N">10</option>
+                <option value="15" class="" data-tipo-operacion="N">15</option>
+                <option value="20" class="" data-tipo-operacion="N">20</option>
+              </select>
+            </div>
+            <div class="col-sm-6 pb-4 d-flex flex-column">
+              <label for="doc-carta-soli" style="color: grey;"><strong>Carta de Solicitud</strong></label>
+              <input type="file" name="doc-carta-soli" id="doc-carta-soli">
+            </div>
+          </div>
+          <!-- botones para el form -->
+          <div class="row my-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <button class="btn w-100 btn-danger text-white text-uppercase fw-bold" type="button">borrar</button>
+            </div>
+            <div class="col-6 offset-md-2 col-md-4 offset-lg-3 col-lg-3">
+              <button class="btn w-100 btn-primary text-white text-uppercase fw-bold" type="button">solicitar</button>
+            </div>
+          </div>
+          <p>“Carta de Solicitud: Debe de exponer el motivo por el cual solicita el cambio de fecha”</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer 1 -->
+  <div class="w-100 mt-5 pie bg-dark" style="width: 100%; height: 150px;">
+    <div class="container py-3">
+      <div class="row align-items-center text-white">
+        <div class="col-md-8">
+          <h2 class="text-white text-uppercase"><strong>contáctenos</strong></h2>
+          <h4 class="text-white small"><strong>Central telefónica:</strong> 505-2253-8030</h4>
+          <h4 class="text-white small"><strong>Whatsapp:</strong> (505) 5872-2515</h4>
+          <h5 class="text-white small"><strong>Correo Electrónico:</strong> servicioalcliente_nic@crediq.com</h5>
+        </div>
+        <div class="col-md-4" style="border-left: 3px solid #fff;">
+          <h3 class="text-white"><strong>Managua</strong></h3>
+          <p class="text-white mb-0 small">Pista Jean Paul Genie, de los semáforos del Club Terraza 150 mts west
+            <br>Edificio Nissan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer 2 -->
+  <div class="w-100 fondo-azul py-3" style="background-color: rgba(0, 108, 183,1);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-white mb-0">Todos los derechos reservados |<strong>2022</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
