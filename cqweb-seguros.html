@@ -22,6 +22,7 @@
 
 	<div class="w-100"><img src="http://via.placeholder.com/1666x264" alt="" srcset=""></div>
 
+	<!-- menú lateral más form -->
 	<div class="container py-4">
 		<form action="#" class="pt-5" name="form-seguros" method="post" novalidate="novalidate">
 			<div class="row">
@@ -36,14 +37,15 @@
 						<a href="" class="list-group-item list-group-item-action menu-lateral text-uppercase">cerrar sesion</a>
 					</div>
 				</div>
-				<div class="col-12 col-md-9">
+				<!-- form -->
+				<div class="col-12 col-md-9 border">
 					<!-- elementos de form: input y select -->
-					<div class="row">
+					<div class="row pt-3 px-3">
 						<!-- select de seguros -->
 						<div class="col-md-6 pb-4">
 							<label for="select-seguros" class=""><strong>Servicios de Seguros</strong></label>
 							<select name="select-seguros" id="select-seguros" class="form-control">
-								<option value="">Elije una opción</option>
+								<option disabled selected hidden>Elije una opción</option>
 								<option value="DuplicadoPoliza">Duplicado de poliza</option>
 								<option value="DuplicadoCarnet">Duplicado de carnet</option>
 								<option value="AdendaDescuento">Adendo por Descuento</option>
@@ -51,33 +53,35 @@
 							</select>
 						</div>
 						<!-- input:text de número de placa -->
-						<div class="col-md-4 pb-4">
+						<div class="col-md-6 pb-4">
 							<label for="input-placa" class=""><strong>Número de placa</strong></label>
-							<input type="text" name="input-placa" id="input-placa" class="form-control">
+							<input type="text" name="input-placa" id="input-placa" class="form-control" placeholder="Número de placa">
 						</div>
 						<!-- select de operacion -->
 						<div class="col-md-6 pb-4">
 							<label for="select-operacion" class=""><strong>Operación</strong></label>
 							<select name="select-operacion" id="select-operacion" class="form-control" aria-invalid="false">
-								<option value="" class="" data-tipo-operacion="N">Seleccione</option>
+								<option disabled selected hidden>Seleccione</option>
 								<option value="0600000428318" class="" data-tipo-operacion="N">0600000428318</option>
 								<option value="0600000428834" class="" data-tipo-operacion="N">0600000428834</option>
 								<option value="0660000000053" class="" data-tipo-operacion="N">0660000000053</option>
 							</select>
 						</div>
 						<!-- input:t de número de teléfono -->
-						<div class="col-md-4 pb-4">
+						<div class="col-md-6 pb-4">
 							<label for="input-telefono" class=""><strong>Teléfono de Notificación</strong></label>
-							<input type="text" name="input-telefono" id="input-telefono" class="form-control input-number">
+							<input type="text" name="input-telefono" id="input-telefono" class="form-control input-number" placeholder="Teléfono">
 						</div>
 					</div>
 					<!-- botones para el form -->
-					<div class="row my-4">
+					<div class="row my-4 px-3">
 						<div class="col-6 col-md-4 col-lg-3">
-							<button class="btn w-100 btn-danger text-white text-uppercase fw-bold" type="button">borrar</button>
+							<!-- <button class="btn w-100 btn-danger text-white text-uppercase fw-bold" type="button">borrar</button> -->
+							<button class="btn w-100 btn-outline-light text-danger shadow text-uppercase rounded" type="submit" id="btn-ingresar">borrar ></button>
 						</div>
 						<div class="col-6 offset-md-2 col-md-4 offset-lg-3 col-lg-3">
-							<button class="btn w-100 btn-primary text-white text-uppercase fw-bold" type="button">solicitar</button>
+							<!-- <button class="btn w-100 btn-primary text-white text-uppercase fw-bold" type="button">solicitar</button> -->
+							<button class="btn w-100 btn-outline-light text-danger shadow text-uppercase rounded" type="submit" id="btn-ingresar">solicitar ></button>
 						</div>
 					</div>
 				</div>

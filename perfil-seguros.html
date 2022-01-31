@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/header/cq_logo_full.png" alt="" srcset="" style="height: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <!-- desktop: dropdown element -->
+          <li class="nav-item dropdown" id="nvdd1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-sm-start" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Vehiculos nuevos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Vehiculos usados</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Renting</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">CrediAuto</a></li>
+            </ul>
+          </li>
+          <!-- mobile: dropdown hidden, collapse element instead -->
+          <li class="nav-item" id="nvmd1">
+            <a class="btn" data-bs-toggle="collapse" href="#nbmc1" role="button" aria-expanded="false" aria-controls="nbmc1">
+              Productos
+            </a>
+          </li>
+          <div class="collapse" id="nbmc1">
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Vehiculos Nuevos</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Vehículos Usados 2</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Renting</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">CrediAuto</a></div>
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pre aprobación</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Puntos de pago</a>
+          </li>
+
+          <li class="nav-item dropdown" id="nvdd2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              País
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">El Salvador</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Honduras</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Nicaragua</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Costa Rica</a></li>
+            </ul>
+          </li>
+          <!-- selector de países para versión móvil -->
+          <li class="nav-item" id="nvmd2">
+            <a class="btn" data-bs-toggle="collapse" href="#nbmc2" role="button" aria-expanded="false" aria-controls="nbmc2">
+              Países
+            </a>
+          </li>
+          <div class="collapse" id="nbmc2">
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">El Salvador</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Honduras</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Nicaragua</a></div>
+            <div class="d-flex justify-content-center mt-2 mb-2"><a href="" class="link-dark" style="text-decoration: none;">Costa Rica</a></div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- texto encabezado -->
+          <div class="col-lg-12" style="text-align: center; font-size: 24px;"><h2>Mi Perfil</h2></div>
+          <!-- menú de navegación -->
+          <div class="col-lg-12">
+            <nav class="nav title-tab-container">
+              <a href="" class="title-tab">Seguros</a>
+              <a href="" class="title-tab">Cambiar Clave</a>
+              <a href="" class="title-tab">Actualizar Datos</a>
+              <a href="" class="title-tab">Alias de Préstamos</a>
+              <a href="" class="title-tab">Mis Tarjetas</a>
+              <a href="" class="title-tab">Cambio de Fecha</a>
+            </nav>
+          </div>
+          <!-- contenido -->
+          <div class="col-lg-12">
+            <div class="card" style="background-color: white; padding: 5vh 5vw;">
+              <div class="" id="insuranceTable">
+                <div class="row">
+                  <!-- select & input -->
+                  <div class="col-lg-6">
+                    <!-- select: servicio de seguros -->
+                    <div class="col-lg-12 pb-2">
+                      <label for="select-seguros" class="">Servicios de Seguros</label>
+                      <select name="select-seguros" id="select-seguros" class="form-control">
+                        <option disabled selected hidden>Elije una opción</option>
+                        <option value="DuplicadoPoliza">Duplicado de poliza</option>
+                        <option value="DuplicadoCarnet">Duplicado de carnet</option>
+                        <option value="AdendaDescuento">Adendo por Descuento</option>
+                        <option value="AdendaInclusion">Adenda por Inclusión de Cobertura</option>
+                      </select>
+                    </div>
+                    <!-- input: número de placa -->
+                    <div class="col-lg-12 pb-2">
+                      <label for="input-placa" class="">Número de placa</label>
+                      <input type="text" name="input-placa" id="input-placa" class="form-control" placeholder="Número de placa">
+                    </div>
+                  </div>
+                  <!-- select & input -->
+                  <div class="col-lg-6">
+                    <!-- select: operación -->
+                    <div class="col-lg-12 pb-2">
+                      <label for="select-operacion" class="">Operación</label>
+                      <select name="select-operacion" id="select-operacion" class="form-control" aria-invalid="false">
+                        <option disabled selected hidden>Seleccione</option>
+                        <option value="0600000428318" class="" data-tipo-operacion="N">0600000428318</option>
+                        <option value="0600000428834" class="" data-tipo-operacion="N">0600000428834</option>
+                        <option value="0660000000053" class="" data-tipo-operacion="N">0660000000053</option>
+                      </select>
+                    </div>
+                    <!-- input: número de teléfono -->
+                    <div class="col-lg-12 pb-2">
+                      <label for="input-telefono" class="">Teléfono de Notificación</label>
+                      <input type="text" name="input-telefono" id="input-telefono" class="form-control input-number" placeholder="Teléfono">
+                    </div>
+                  </div>
+                  <!-- botones: borrar -->
+                  <div class="col-lg-12 d-flex justify-content-center align-items-center mt-2">
+                    <div class="col-lg-6">
+                      <button class="btn btn-outline-light text-danger shadow text-uppercase rounded" type="submit" id="btn-ingresar">borrar ></button>
+                    </div>
+                    <div class="col-lg-6">
+                      <button class="btn btn-outline-light text-danger shadow text-uppercase rounded" type="submit" id="btn-ingresar">solicitar ></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pie de página -->
+  <section class="fixed-bottom bg-seccion footer text-white" id="pie-de-pagina">
+    <div id="footer">
+      <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+        <!-- Desktop Version Footer -->
+        <div class="row" id="dvf">
+          <div class="col-md-3" id="division-1">
+            <img src="img/footer/cq_logo_blanco.png" alt="" srcset=""> <br>
+            <p>CrediQ<br>Todos los derechos reservados</p>
+          </div>
+          <div class="col-md-3" id="division-2">
+            <div class="detail"><strong>Call Center:</strong> 2248-6400 opción 2</div>
+            <div class="detail"><i class="far fa-envelope"></i> crediqcall@crediq.com</div>
+            <div class="detail"><i class="fab fa-facebook-square"></i> CrediQ El Salvador</div>
+          </div>
+          <div class="col-md-3" id="division-3">
+            <div><img src="img/footer/google_play.png" alt="" srcset=""></div>
+            <div><img src="img/footer/app_store.svg" alt="" srcset=""></div>
+          </div>
+          <div class="col-md-3" id="division-4">
+            <div class="d-flex">
+              <a href="" class="btn btn-outline-light bg-dark text-white">Sucursales</a>
+              <a href="" class="btn btn-outline-light bg-dark text-white">Soporte</a>
+              <a href="" class="btn btn-outline-light bg-dark text-white">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Version Footer -->
+        <div class="row" id="mvf">
+          <div class="col" style="display: grid; justify-content: center;">
+            <img src="img/footer/cq_logo_blanco.png" alt="" srcset=""> <br>
+          </div>
+          <div class="col mt-2" style="display: grid; justify-content: center;">
+            <div>
+              <i class="far fa-envelope"></i>
+              <i class="fab fa-facebook-square"></i>
+            </div>
+          </div>
+          <div class="col mt-2" style="display: grid; justify-content: center;">
+            <div class="d-flex">
+              <a href="" class="btn btn-outline-light bg-dark text-white">Contáctanos</a>
+            </div>
+          </div>
+          <div class="col mt-2 text-center" style="display: grid; justify-content: center;">
+            <p>CrediQ<br>Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
